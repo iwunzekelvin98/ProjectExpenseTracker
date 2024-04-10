@@ -11,26 +11,111 @@
         android:id="@+id/expheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="1dp"
         android:text="EXPENSE TRACKER"
         android:textAlignment="center"
         android:textColor="#73A8BF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.104" />
 
+    <HorizontalScrollView
+        android:id="@+id/dayScroller"
+        android:layout_width="409dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expheader">
+
+        <LinearLayout
+            android:id="@+id/dayContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Add TextViews for each day here -->
+            <!-- Example for one day: -->
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="7"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="8"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="9"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="10"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="11"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="12"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="69dp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="13"
+                android:textSize="18sp" />
+
+
+
+            <!-- Repeat TextViews for other days... -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
     <TextView
         android:id="@+id/budgetid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="160dp"
         android:text="Budget"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expheader" />
 
@@ -38,8 +123,8 @@
         android:id="@+id/budject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
         android:text="$0"
         android:textColor="#06386C"
         android:textSize="48sp"
@@ -50,10 +135,11 @@
         android:id="@+id/balanceid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="44dp"
         android:text="Balance"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/budject" />
 
@@ -61,12 +147,30 @@
         android:id="@+id/balance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:text="$0"
         android:textColor="#8C0000"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="@+id/balanceid"
         app:layout_constraintTop_toBottomOf="@+id/balanceid" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="406dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="549dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expheader">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
