@@ -25,86 +25,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.104" />
 
-    <HorizontalScrollView
-        android:id="@+id/dayScroller"
-        android:layout_width="409dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/expheader"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expheader">
-
-        <LinearLayout
-            android:id="@+id/dayContainer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <!-- Add TextViews for each day here -->
-            <!-- Example for one day: -->
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="7"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="8"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="9"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="10"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="11"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="12"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="69dp"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="13"
-                android:textSize="18sp" />
-
-
-
-            <!-- Repeat TextViews for other days... -->
-
-        </LinearLayout>
-    </HorizontalScrollView>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <TextView
