@@ -17,10 +17,21 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Declare SetBudgetActivity -->
+        <activity
+            android:name=".SetBudgetActivity"
+            android:exported="false" />  <!-- Set exported to false if this activity does not need to be accessible from other apps -->
+
+        <!-- Declare AddExpenseActivity -->
+        <activity
+            android:name=".AddExpenseActivity"
+            android:exported="false" />  <!-- Set exported to false if this activity does not need to be accessible from other apps -->
+
+
     </application>
 
 </manifest>

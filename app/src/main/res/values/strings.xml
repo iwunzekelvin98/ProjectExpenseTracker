@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Project Expense Tracker</string>
+    <string name="currency_format">$%s</string>
+
 </resources>

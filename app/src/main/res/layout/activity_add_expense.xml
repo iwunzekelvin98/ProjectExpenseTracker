@@ -1,0 +1,29 @@
+<!-- Layout for adding an expense (activity_add_expense.xml) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/etExpenseName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Item Name" />
+
+    <EditText
+        android:id="@+id/etExpenseAmount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Amount"
+    android:inputType="numberDecimal"
+    android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnAddExpense"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Expense"
+    android:layout_marginTop="20dp" />
+</LinearLayout>
